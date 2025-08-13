@@ -8,5 +8,6 @@ Website inspired by V of BTS album 'Layover'
 - [ ] Mobile support
 - [ ] Error page
 - [ ] Loading page
+- [ ] Error page
 ### URL
 [Layover on Vercel](https://layover-v.vercel.app/)
