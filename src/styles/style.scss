@@ -49,7 +49,7 @@ $handwritten-font: "Permanent Marker", cursive;
 
 // LANDING PAGE
 
-#layover {
+#center {
     color: white;
     position: fixed;
     z-index: 2;
@@ -61,12 +61,12 @@ $handwritten-font: "Permanent Marker", cursive;
     align-items: center;
 }
 
-.layoverTitle {
+.centerTitle {
     font-family: $layover-font;
     font-size: 150px;
 }
 
-.layoverSubtitle {
+.centerSubtitle {
     font-family: $handwritten-font;
 }
 

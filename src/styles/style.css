@@ -36,7 +36,7 @@
   color: black;
 }
 
-#layover {
+#center {
   color: white;
   position: fixed;
   z-index: 2;
@@ -48,12 +48,12 @@
   align-items: center;
 }
 
-.layoverTitle {
+.centerTitle {
   font-family: "Reenie Beanie", cursive;
   font-size: 150px;
 }
 
-.layoverSubtitle {
+.centerSubtitle {
   font-family: "Permanent Marker", cursive;
 }
 
