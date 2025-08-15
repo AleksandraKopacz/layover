@@ -57,6 +57,45 @@
   font-family: "Permanent Marker", cursive;
 }
 
+#containerTracklist {
+  color: white;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.container {
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+#trackDetails {
+  width: 50%;
+  padding-left: 2.5rem;
+  padding-right: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+.trackTitle {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.trackNumbers {
+  font-weight: 900;
+}
+
 #footer {
   z-index: 6;
   position: fixed;
