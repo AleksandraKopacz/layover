@@ -68,14 +68,14 @@
   align-items: center;
   justify-content: center;
   padding: 1rem 0 1rem 0;
+  gap: 2rem;
 }
 
 .container {
-  height: 70%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: white;
+  box-shadow: 10px 5px 5px rgb(71, 71, 71);
 }
 
 #trackDetails {
@@ -87,13 +87,25 @@
   flex-direction: row;
 }
 
+.trackTitle, .trackDesc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .trackTitle {
   font-weight: 800;
   text-transform: uppercase;
 }
 
-.trackNumbers {
-  font-weight: 900;
+.trackDesc {
+  font-size: 12px;
+}
+
+.trackBackground {
+  pointer-events: none;
+  width: 10rem;
 }
 
 #footer {

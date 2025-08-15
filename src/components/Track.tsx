@@ -1,21 +1,25 @@
+"use client"
+import { useState } from "react";
+
 export default function Track({
   title,
-  subtitle,
-  trackNumber,
+  desc,
+  fileName,
 }: {
   title: string;
-  subtitle: string;
-  trackNumber: string;
+  desc: string;
+  fileName: string;
 }) {
+  const [hover, setHover] = useState(false);
+
   return (
-    <div id="trackDetails">
-      <div className="trackNumbers">
-        <p>{trackNumber}</p>
-      </div>
-      <div className="trackTitles">
-        <p className="trackTitle">{title}</p>
-        <p className="trackDesc">{subtitle}</p>
-      </div>
+    <div
+      className="container"
+      onMouseOver={() => setHover(true)}
+      onMouseOut={() => setHover(false)}
+    >
+      {hover ? <p className="trackDesc">{desc}</p> : <p className="trackTitle">{title}</p>}
+      <img className="trackBackground" src={fileName} alt={title} />
     </div>
   );
 }

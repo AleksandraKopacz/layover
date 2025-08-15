@@ -2,11 +2,11 @@
 Website inspired by V of BTS album 'Layover'
 ### To do
 - [x] Homepage
-- [ ] Tracklist page
+- [x] Tracklist page
 - [ ] Music videos page
 - [ ] Schedule page
 - [ ] Mobile support
-- [ ] Error page
+- [x] Error page
 - [ ] Loading page
 - [x] Error page
 ### URL
