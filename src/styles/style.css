@@ -75,7 +75,6 @@
   position: relative;
   text-align: center;
   color: white;
-  box-shadow: 10px 5px 5px rgb(71, 71, 71);
 }
 
 #trackDetails {
@@ -87,7 +86,9 @@
   flex-direction: row;
 }
 
-.trackTitle, .trackDesc {
+.trackTitle,
+.trackDesc,
+.musicVideo {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -101,11 +102,46 @@
 
 .trackDesc {
   font-size: 12px;
+  text-align: end;
 }
 
 .trackBackground {
   pointer-events: none;
   width: 10rem;
+  box-shadow: 10px 7px 10px rgb(71, 71, 71);
+}
+
+#centerVideo {
+  color: rgb(204, 204, 204);
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mvFrame {
+  pointer-events: none;
+}
+
+.mvTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.active {
+  text-decoration: underline;
+  color: white;
+}
+
+.active:hover, .inactive:hover {
+  color: white;
 }
 
 #footer {

@@ -10,7 +10,7 @@ export default function Track({
   desc: string;
   fileName: string;
 }) {
-  const [hover, setHover] = useState(false);
+  const [hover, setHover] = useState<boolean>(false);
 
   return (
     <div
