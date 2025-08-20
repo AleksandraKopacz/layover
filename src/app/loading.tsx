@@ -1,7 +1,12 @@
+import VideoBG from "@/components/VideoBG";
+
 export default function Loading() {
-  return (<div>
-        <video autoPlay muted loop id="backgroundVideo">
-          <source src="assets/video/yeontan.mp4" type="video/mp4" />
-        </video>
-      </div>)
+  return (
+    <div>
+      <VideoBG videoName="yeontan.mp4" />
+      <div id="center">
+      <p className="centerTitle">Loading...</p>
+    </div>
+    </div>
+  );
 }

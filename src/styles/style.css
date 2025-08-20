@@ -69,6 +69,7 @@
   justify-content: center;
   padding: 1rem 0 1rem 0;
   gap: 2rem;
+  overflow: auto;
 }
 
 .container {
@@ -98,11 +99,13 @@
 .trackTitle {
   font-weight: 800;
   text-transform: uppercase;
+  overflow: auto;
 }
 
 .trackDesc {
   font-size: 12px;
   text-align: end;
+  overflow: auto;
 }
 
 .trackBackground {
@@ -140,7 +143,8 @@
   color: white;
 }
 
-.active:hover, .inactive:hover {
+.active:hover,
+.inactive:hover {
   color: white;
 }
 
@@ -164,4 +168,22 @@
 
 .socials {
   font-size: 30px;
+}
+
+@media (max-width: 620px) {
+  #centerVideo,
+  #containerTracklist {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: scroll;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+  #centerVideo {
+    font-weight: 600;
+  }
+  #nav ul {
+    gap: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */

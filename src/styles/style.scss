@@ -84,6 +84,7 @@ $handwritten-font: "Permanent Marker", cursive;
     justify-content: center;
     padding: 1rem 0 1rem 0;
     gap: 2rem;
+    overflow: auto;
 }
 
 .container {
@@ -113,11 +114,13 @@ $handwritten-font: "Permanent Marker", cursive;
 .trackTitle {
     font-weight: 800;
     text-transform: uppercase;
+    overflow: auto;
 }
 
 .trackDesc {
     font-size: 12px;
     text-align: end;
+    overflow: auto;
 }
 
 .trackBackground {
@@ -153,11 +156,12 @@ $handwritten-font: "Permanent Marker", cursive;
 }
 
 .active {
-    text-decoration:underline;
+    text-decoration: underline;
     color: white;
 }
 
-.active:hover, .inactive:hover {
+.active:hover,
+.inactive:hover {
     color: white;
 }
 
@@ -183,4 +187,27 @@ $handwritten-font: "Permanent Marker", cursive;
 
 .socials {
     font-size: 30px;
+}
+
+// MOBILE
+
+@media (max-width: 620px) {
+
+    #centerVideo,
+    #containerTracklist {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        position: relative;
+        overflow: scroll;
+        color: white;
+        font-family: $site-font;
+    }
+
+    #centerVideo {
+        font-weight: 600;
+    }
+
+    #nav ul {
+        gap: 1rem;
+    }
 }

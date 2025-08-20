@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 import { useState } from "react";
 
@@ -17,6 +18,7 @@ export default function Track({
       className="container"
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
+      onClick={() => setHover(!hover)}
     >
       {hover ? <p className="trackDesc">{desc}</p> : <p className="trackTitle">{title}</p>}
       <img className="trackBackground" src={fileName} alt={title} />

@@ -11,10 +11,7 @@ export default function Navigation() {
           <Link href="/tracklist">TRACKLIST</Link>
         </li>
         <li>
-          <Link href="/mv">MUSIC VIDEOS</Link>
-        </li>
-        <li>
-          <Link href="/schedule">SCHEDULE</Link>
+          <Link href="/mv">VIDEOS</Link>
         </li>
       </ul>
     </nav>
